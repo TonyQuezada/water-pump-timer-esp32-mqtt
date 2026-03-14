@@ -9,14 +9,15 @@
 #include <PubSubClient.h>
 
 // ========== WIFI CREDENTIALS ==========
-const char* ssid     = "INFINITUMC2E8";
-const char* password = "jNNeK6uCj3";
+const char* ssid          = "YOUR_SSID";
+const char* password      = "YOUR_PASSWORD";
+
 
 // ========== MQTT CREDENTIALS ==========
-const char* mqtt_server   = "192.168.1.152";  // Debian server LAN IP
+const char* mqtt_server   = "YOUR_BROKER_IP";
 const int   mqtt_port     = 1883;
 const char* mqtt_user     = "esp32";
-const char* mqtt_password = "a1m1t3m8";
+const char* mqtt_password = "YOUR_MQTT_PASSWORD";
 const char* mqtt_clientId = "waterpump-esp32";
 
 // ========== MQTT TOPICS ==========
