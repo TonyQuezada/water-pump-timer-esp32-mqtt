@@ -1,0 +1,21 @@
+// You SHOULD add this file. Mine is hidden under gitignore
+
+module.exports = {
+  apps: [{
+    name: "waterpump",
+    script: "npm",
+    args: "start",
+    instances: 1,        // force single process to fix MQTT singleton
+    exec_mode: "fork",   // not cluster mode
+    env: {
+      NODE_ENV:        "production",
+      MQTT_HOST:       "192.168.1.x",
+      MQTT_PORT:       "1883",
+      MQTT_USER:       "nextjs",
+      MQTT_PASSWORD:   "yourpassword",
+      AUTH_SECRET:     "your_secret_key",
+      AUTH_URL:        "your_dns_url",
+      AUTH_TRUST_HOST: "true",
+    }
+  }]
+}
