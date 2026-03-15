@@ -168,6 +168,12 @@ water-pump-timer-esp32-mqtt/
 
 ## Setup
 
+### Network setup
+
+Both the ESP32 and the Debian server use static local IPs assigned through the router's DHCP reservation feature — this ensures their addresses never change without touching any code. The router assigns a fixed IP to each device based on its MAC address.
+
+The server is also accessible remotely via a DuckDNS dynamic DNS domain, which keeps the public URL stable even though the ISP assigns a dynamic public IP. This setup is not covered here.
+
 ### 1. Mosquitto broker
 
 **Install:**
