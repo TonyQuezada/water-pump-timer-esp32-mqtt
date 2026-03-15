@@ -9,7 +9,7 @@ The maximum timer duration is set by the `MAX_HOURS_TIMER` constant in the firmw
 ---
 
 <p align="center">
-  <img src="images/img1.png" alt="Device" width="720">
+  <img src="images/img1.png" alt="Device" width="360">
 </p>
 
 <table align="center">
