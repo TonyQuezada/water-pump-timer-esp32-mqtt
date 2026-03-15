@@ -9,12 +9,12 @@ module.exports = {
     exec_mode: "fork",   // not cluster mode
     env: {
       NODE_ENV:        "production",
-      MQTT_HOST:       "192.168.1.x",
+      MQTT_HOST:       "YOUR_BROKER_IP",
       MQTT_PORT:       "1883",
       MQTT_USER:       "nextjs",
-      MQTT_PASSWORD:   "yourpassword",
-      AUTH_SECRET:     "your_secret_key",
-      AUTH_URL:        "your_dns_url",
+      MQTT_PASSWORD:   "YOUR_MQTT_PASSWORD",
+      AUTH_SECRET:     "YOUR_AUTH_SECRET",        // generate with: node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+      AUTH_URL:        "https://YOUR_DOMAIN",
       AUTH_TRUST_HOST: "true",
     }
   }]
