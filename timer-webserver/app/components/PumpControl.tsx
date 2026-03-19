@@ -228,7 +228,7 @@ export default function PumpControl({ username, role }: Props) {
                   <tbody>
                     {logs.map((log) => (
                       <tr key={log.id} className="border-b border-gray-800/50 hover:bg-gray-800/30">
-                        <td className="px-4 py-2 text-gray-500 whitespace-nowrap">{log.timestamp}</td>
+                        <td className="px-4 py-2 text-gray-500 whitespace-nowrap">{new Date(log.timestamp + 'Z').toLocaleString('es-MX')}</td>
                         <td className="px-4 py-2">
                           <span className={log.source === "physical" ? "text-yellow-500" : "text-cyan-500"}>
                             {log.source}
